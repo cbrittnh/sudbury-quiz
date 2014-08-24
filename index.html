@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>How well do you know Sudbury, Massachusetts?</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="sudquiz.js"></script>
+</head>
+<body>
+	<section id = "startPage">
+		<header>
+			<img class="introPic" src="images/sudburysign.jpg">
+		</header>
+
+		<h2>How well do you know Sudbury, Massachusetts?</h2>
+	
+		<button id="startButton">Click Here To Start</button>
+	</section>
+	<section id = "quest1">
+		<img class="sudPic" src="images/townhall.jpg">
+		<h2>1. In what year was the original town of Sudbury founded?</h2>
+		<button class="answer">1962</button>
+		<button class="answer">1782</button>
+		<button class="answer">1601</button>
+		<button class="answer">1843</button>
+		<button class="answer">1639</button>
+		<button class="submit" id="s1">Submit</button>
+	</section>
+	<section id = "quest2">
+		<img class="sudPic" src="images/hosmerhouse.jpg">
+		<h2>2. What is the name of this building?</h2>
+		<button class="answer">McDonalds</button>
+		<button class="answer">The Hosmer House</button>
+		<button class="answer">Young's Store</button>
+		<button class="answer">This old house</button>
+		<button class="answer">Bowker's Store</button>
+		<button class="submit" id="s2">Submit</button>
+	</section>
+	<section id = "quest3">
+		<img class="sudPic" src="images/waysideinn.jpg">
+		<h2>3. What is the longest continuing business in town?</h2>
+		<button class="answer">Hurlburt and Rogers Manufacturing Company</button>
+		<button class="answer">Enoch Kidder’s leather shop</button>
+		<button class="answer">Hunt’s General Store</button>
+		<button class="answer">Parmenter and Garfield’s general store</button>
+		<button class="answer">The Wayside Inn</button>
+		<button class="submit" id="s3">Submit</button>
+	</section>
+	<section id = "quest4">
+		<img class="sudPic" src="images/garfield.jpg">
+		<h2>4. In the years 1854 and 1855 what college student was employed as as a summer teacher in Sudbury, and would eventually become a US president?</h2>
+		<button class="answer">Rutherford B. Hayes</button>
+		<button class="answer">Grover Cleveland</button>
+		<button class="answer">James Abram Garfield</button>
+		<button class="answer">Andrew Johnson</button>
+		<button class="answer">Abraham Lincoln</button>
+		<button class="submit" id="s4">Submit</button>
+	</section>
+	<section id = "quest5">
+		<img class="sudPic" src="images/henryford.gif">
+		<h2>5. In 1923, who stepped in to protect the Wayside Inn as a “splendid example of colonial America.”</h2>
+		<button class="answer">Reverend Hosmer</button>
+		<button class="answer">Henry Ford</button>
+		<button class="answer">Charles Parmenter</button>
+		<button class="answer">Sewall Taylor</button>
+		<button class="answer">Arthur Bowen</button>
+		<button class="submit" id="s5">Submit</button>
+	</section>
+	<section id = "quest6">
+		<img class="sudPic" src="images/gristmill.jpg">
+		<h2>6. In what year was the Grist Mill built?</h2>
+		<button class="answer">1639</button>
+		<button class="answer">1900</button>
+		<button class="answer">1850</button>
+		<button class="answer">1929</button>
+		<button class="answer">1732</button>
+		<button class="submit" id="s6">Submit</button>
+	</section>
+	<section id = "quest7">
+		<img class="sudPic" src="images/baberuth.jpg">
+		<h2>7. Where did Babe Ruth live in Sudbury?</h2>
+		<button class="answer">Boston Post Road</button>
+		<button class="answer">Dutton Road</button>
+		<button class="answer">He did not live in Sudbury</button>
+		<button class="answer">Goodman's Hill Road</button>
+		<button class="answer">Nobscot Hill</button>
+		<button class="submit" id="s7">Submit</button>
+	</section>
+	<section id = "quest8">
+		<img class="sudPic" src="images/patriots.jpg">
+		<h2>8. How many citizen/soldiers marched to Concord on April 19th, 1775?</h2>
+		<button class="answer">63</button>
+		<button class="answer">580</button>
+		<button class="answer">43</button>
+		<button class="answer">259</button>
+		<button class="answer">346</button>
+		<button class="submit" id="s8">Submit</button>
+	</section>
+	<section id = "quest9">
+		<img class="sudPic" src="images/mmchapel.jpg">
+		<h2>9. What is this church called?</h2>
+		<button class="answer">St. Elizabeth's</button>
+		<button class="answer">The Mary Martha Chapel</button>
+		<button class="answer">The Martha Mary Chapel</button>
+		<button class="answer">Our Lady of Fatima</button>
+		<button class="answer">St. Anselm's</button>
+		<button class="submit" id="s9">Submit</button>
+	</section>
+	<section id = "quest10">
+		<img class="sudPic" src="images/bostonpostrd.png">
+		<h2>10. In the 1970′s, some town businesses and school children teamed up to do something on their own about Sudbury’s environment. What was the name of this group?</h2>
+		<button class="answer">Springthing</button>
+		<button class="answer">G.R.E.E.N.</button>
+		<button class="answer">Earth</button>
+		<button class="answer">P.R.I.D.E.</button>
+		<button class="answer">Sudbury Cleanup</button>
+		<button class="submit" id="s10">Submit</button>
+	</section>
+	<section id="score">
+		<img id="scoreImg" src="images/sudmap.jpg">
+		<div id = "statement"></div>
+		<div id="finalScore"></div>
+		<button class="submit" id="playAgain">Play Again!</button>
+		<button class="submit" id="answers">Click for the answers</button>
+		
+		<!-- Modal Information Box -->
+			<div class="overlay" id="modal">
+				<div class="content" id="content">
+					<h3>Answers:</h3>
+					<div><left>
+						<p>Source: <a href="http://sudbury.org/sudbury-history" target="new">http://sudbury.org/sudbury-history</a>/</p>
+						<ol>
+							<li> 1639</li>
+							<li> The Hosmer House. The Post Office at the Hosmer house sold penny candy, bubble gum and baseball cards to the kids while their parents socialized during evening mail pickup, a popular activity at this town gathering place. </li>
+							<li> The Wayside Inn is undoubtedly the longest continuing business in town. </li>
+							<li> James Abram Garfield</li>
+							<li> In 1923, Henry Ford stepped in to protect the Wayside Inn as a “splendid example of colonial America.”</li>
+							<li> Built in 1929 by renowned hydraulic engineer J.B. Campbell, the Wayside Inn Grist Mill produces approximately 5 tons of flour per year. The Grist Mill was used by Pepperidge Farm as a full-time production facility from 1952-1967 and is the basis for their company logo. <a href="http://www.wayside.org/tour/wayside-inn-grist-mill" target="new">(http://www.wayside.org/tour/wayside-inn-grist-mill)</a></li>
+							<li> Purchasing the old Perry farm on Dutton Road, Babe named it Home Plate and tried his hand at gentleman farming, raising chickens, turkeys, cows and horses.</li>
+							<li> Sudbury sent the largest contingent (346) to Concord on April 19, 1775.</li>
+							<li> Diagonally across the Wayside Inn Road from the Mill stands the Martha Mary Chapel. 
+							This building was conceived by Henry Ford and was built using the timber from pine trees on this property which had blown 
+							down in the 1938 hurricane. Much of the work was performed by people who lived, worked or attended one of the three schools 
+							on the estate. Ground was broken in 1939 and completed with the installation of a weather vane on Ford’s birthday, July 30th, 1940.</li>
+							<li> In the 1970′s, some town businesses and school children teamed up to do something on their own about Sudbury’s environment. Known as P.R.I.D.E. (Post Road Indeed Deserves Effort) they formed teams to clean up Rt. 20.</li>
+						</ol>
+						
+						<h3><a class="close" href="#"><b>Close this box!</b></a></h3></left>
+					</div>
+				</div>
+			</div>
+		<h2 id="coded">Coded with <img src="images/heart.gif"> by <a href="mailto:cbrittnh@gmail.com" style="text-decoration: none">Cathy</a></h2>
+		
+	</section>
+	
+</body>
+</html>
